@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenador de Memoria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+    <div>
+        <button></button>
+    </div>
+    <h1>🧠 Entrenador de Memoria</h1>
+    <p class="description">Haz clic en las cartas para encontrar los pares. Diseñado especialmente para ejercitar la memoria de forma divertida.</p>
+    <div class="header-stats">
+        <p class="score" id="timer">Tiempo: 0s</p>
+        <p class="score" id="score">Intentos: 0</p>
+        <p class="score" id="matches">Pares encontrados: 0</p>
+    </div>
+
+    <section class="grid" id="grid"></section>
+
+    <p class="score" id="bestScore"></p>
+    <button id="start">Inicio del juego</button>
+    <button id="reset">Reiniciar el Juego</button>
+    <p id="winMessage" class="win-message"></p>
+    </main>
+
+    <audio id="successSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_5f7e3d15a4.mp3"></audio>
+    <audio id="errorSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_48cbec5f56.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
